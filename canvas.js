@@ -1,13 +1,5 @@
 console.log("Hello");
 
-let myImage = document.getElementById("myImage");
-let myButtonAdd = document.getElementById("myButtonAdd");
-let myButtonChange = document.getElementById("myButtonChange");
-let myCanvas = document.getElementById("myCanvas");
-let ctx = myCanvas.getContext("2d");
-myButtonChange.addEventListener("click", changeImage,true);
-myButtonAdd.addEventListener("click", addFilter,true);
-
 
 myImage.onload = function() {
     myCanvas.width = myImage.width;
@@ -34,6 +26,18 @@ function addFilter(){
   // Array representing, r then g then b values for each pixel
   let imageData = ctx.getImageData(0, 0, myCanvas.width, myCanvas.height);
   let dataArray = imageData.data;
+
+    
+    
+let myImage = document.getElementById("myImage");
+let myButtonAdd = document.getElementById("myButtonAdd");
+let myButtonChange = document.getElementById("myButtonChange");
+let myCanvas = document.getElementById("myCanvas");
+let ctx = myCanvas.getContext("2d");
+myButtonChange.addEventListener("click", changeImage,true);
+myButtonAdd.addEventListener("click", addFilter,true);
+
+
 
   
   // Loop over each pixel

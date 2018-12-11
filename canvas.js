@@ -47,11 +47,11 @@ function addFilter() {
         //     dataArray[i + 1] = 255 - dataArray[i + 1];
         //     dataArray[i + 2] = 255 - dataArray[i + 2];
 
-        dataArray[i] = dataArray[i];
+        dataArray[i] = dataArray[i + 1];
         // green
-        dataArray[i + 1] = 0;
+        dataArray[i + 1] = dataArray[i + 2];
         // blue
-        dataArray[i + 2] = 0;
+        dataArray[i + 2] = dataArray[i];
     }
     // Write the data back to canvas
 

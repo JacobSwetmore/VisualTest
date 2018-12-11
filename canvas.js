@@ -59,7 +59,7 @@ function addFilter() {
     // ctx.putImageData(imageData, 0, 0);
 
     ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
-    ctx.filter = 'sepia(1)’; 
+    ctx.filter = "sepia(1)"; 
     ctx.drawImage(myImage, 0, 0, myCanvas.width, myCanvas.height);
 
 }

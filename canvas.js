@@ -1,3 +1,5 @@
+console.log("Hello");
+
 let myImage = document.getElementById("myImage");
 let myButtonAdd = document.getElementById("myButtonAdd");
 let myButtonChange = document.getElementById("myButtonChange");
